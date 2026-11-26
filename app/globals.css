@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* IIT Roorkee palette (navy + gold) with an eco-green accent for the waste-management theme */
+@theme {
+  --color-navy-950: #071528;
+  --color-navy-900: #0d1f38;
+  --color-navy-800: #0a2c55;
+  --color-navy-700: #003d7a;
+  --color-navy-600: #004f9e;
+  --color-navy-100: #e6eef7;
+  --color-navy-50: #f3f7fb;
+
+  --color-gold-500: #ffb81c;
+  --color-gold-400: #ffc94d;
+  --color-gold-600: #e09d00;
+  --color-gold-100: #fff4d6;
+
+  --color-eco-700: #11713f;
+  --color-eco-600: #16924f;
+  --color-eco-500: #22a85f;
+  --color-eco-100: #ddf5e6;
+  --color-eco-50: #f0faf4;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-kenburns: kenburns 9s ease-out forwards;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes kenburns {
+    from { transform: scale(1.12); }
+    to { transform: scale(1); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  background: #ffffff;
+  color: #1c2533;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Subtle leaf/dot pattern used on light sections */
+.bg-eco-pattern {
+  background-color: var(--color-eco-50);
+  background-image: radial-gradient(rgba(17, 113, 63, 0.09) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, #ffb81c, #ffe08a, #ffb81c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation: none !important; }
+}

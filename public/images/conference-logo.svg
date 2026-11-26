@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ICTWM 3.0 logo">
+  <circle cx="32" cy="32" r="31" fill="#003d7a"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#ffb81c" stroke-width="2"/>
+  <!-- circular arrows -->
+  <path d="M32 12a20 20 0 0 1 17.3 10" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M51.6 19.3l-1.8 4.6-4.8-1.2" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M49.3 42A20 20 0 0 1 32 52" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M34.6 55.4l-3.9-3 3.1-3.9" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.7 42A20 20 0 0 1 14.7 22" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M11.8 25.6l3-3.9 3.9 3.1" fill="none" stroke="#ffb81c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- leaf -->
+  <path d="M23 40c0-10 7-16 19-16 0 12-6 18-15 18-1.6 0-2.9-.6-4-2z" fill="#22a85f"/>
+  <path d="M24.5 41.5C28 36 32 32 38 28" fill="none" stroke="#ddf5e6" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
